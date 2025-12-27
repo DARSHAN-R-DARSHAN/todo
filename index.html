@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>GSAP Todo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<main class="app">
+  <header>
+    <h1>Tasks</h1>
+    <p id="stats"></p>
+  </header>
+
+  <form id="taskForm">
+    <input id="title" placeholder="Add a task..." required />
+    <input type="date" id="dueDate" />
+    <select id="priority">
+      <option value="high">High</option>
+      <option value="medium" selected>Medium</option>
+      <option value="low">Low</option>
+    </select>
+    <button>Add</button>
+  </form>
+
+  <div class="controls">
+    <select id="filter">
+      <option value="all">All</option>
+      <option value="pending">Pending</option>
+      <option value="completed">Completed</option>
+    </select>
+
+    <select id="sort">
+      <option value="date">Date</option>
+      <option value="priority">Priority</option>
+    </select>
+
+    <button id="clearCompleted">Clear Completed</button>
+  </div>
+
+  <ul id="taskList"></ul>
+</main>
+
+<div id="toast"></div>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>

@@ -14,7 +14,7 @@
 }
 
 body {
-  margin: 0;
+  margin: 1;
   min-height: 100vh;
   display: grid;
   place-items: center;

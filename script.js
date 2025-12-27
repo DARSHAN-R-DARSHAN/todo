@@ -73,7 +73,7 @@ function visibleTasks() {
   return tasks;
 }
 
-
+// rendering
 function render() {
   const list = $("taskList");
   list.innerHTML = "";
